@@ -22,6 +22,7 @@ You are at the enterance to a cave. {not torch_pickup:There is a torch on the fl
 + [Take the west tunnel] -> west_tunnel
 * [Pick up the torch] -> torch_pickup
 
+
 == east_tunnel ==
 You are in the east tunnel. It is very dark, you can't see anything. 
 * {torch_pickup} [Light Torch] -> east_tunnel_lit 
@@ -30,14 +31,36 @@ You are in the east tunnel. It is very dark, you can't see anything.
 
 == west_tunnel ==
 You are in the west 
+* [Move Onwards] -> encounter_bats
 + [Go back] -> cave_mouth
 -> END 
+
+== encounter_bats ==
+You have stumbled into a swarm of bats.
++ [Fight the bats] -> death
+
+== death == 
+You have died. 
+-> END
 
 === torch_pickup ===
 You now have a torch. May it light the way. 
 * [Go back] -> cave_mouth
 -> END
 
+== gather_coins ==
+You have made the best choices. Enjoy your prize.
+* [ Win Game] -> win_game
++ [Go back]
+-> END
+
 == east_tunnel_lit == 
 The light of your torch glints off of the thousands of coins in the cave. 
+* [Take all of the coins] -> gather_coins
+* {gather_coins} [Acquire Coins] -> win_game 
++ [Go back] -> cave_mouth
+-> END
+
+== win_game == 
+You have won the prize. 
 -> END
