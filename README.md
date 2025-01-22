@@ -1,4 +1,4 @@
-# FA24Exercise-01b-Inky-Introduction
+# SP25Exercise-01b-Inky-Introduction
 
 My name is:
 
@@ -7,3 +7,4 @@ My name is:
 My github username is:
 
 [vmankow]
+ 

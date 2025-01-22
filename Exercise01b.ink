@@ -23,47 +23,47 @@ VAR coins = 1
 -> kidnap
 
 == kidnap ==
-One night, you are awaken from deep slumber to the sound of screeching tires outside. You go to look out the window, only to discover a group of men rushing inside your house. You rush to grab your pet. Before you can hide, the men spot you. They quickly restrain you with handcuffs and blindfolds. What do you choose to do next? 
+One night, you are awaken from a deep sleep to a light so bright it pierces through your closed eyes. Blinded and afraid, you feel yourself begin to float! Seconds pass- maybe a minute. Higher and higher you go. When will this all be over?! Crash... you fall hard onto a cold metallic floor. As your vision restores, you are able to make out a few large egg shapes. Are they green? Oh no... ALIENS! What do you choose to do next? 
 
 + [ fight back ] -> fight 
 + [succumb] -> succumb
 
 == fight ==
-You kick and punch with all of your energy. You hear one of the men scream. Good, I might have a chance, you think to yourself. This thought is soon halted when you feel a stabbing pain in your left thigh. Warmth trickles down your leg. Your thoughts subside and your eyes become heavy.
+You kick and punch with all of your energy yet none of them are the slightest bit startled. Can they not feel pain? While contemplating escape plans, one of the aliens spits a neon goo onto your arm. As the sludge slides down your body, you thoughts subside and your eyes become heavy.
 -> wake_up
 
 == succumb
-After you inhale a heavy mist, your vision and mind go blank.
+The tallest alien pulls a lever and a heavy gas spills out from vents all around you. After you inhale the heavy mist, your vision and mind go blank.
 -> wake_up
 
 == wake_up ==
-You wake up to the feeling of gravel below you. Your handcuffs are off, and there is no sign of the kidnappers. You take off your blindfold and discover you are at the enterance to a cavern. 
+You wake up to the feeling of dirt below you. As you look around, there are no signs of the aliens. As you pick yourself up, something feels wierd... did you lose 50 pounds? You try to take a step forward but your leg is moving oddly slow. Oh no- LOW GRAVITY!
 
 + [move onwards] -> move_onwards
-* [run away] -> run_away
+* [panic] -> panic
 
-== run_away ==
-You pick up your pet and run as fast as you can into the nearby woods with the hopes to find someone who can help. After the daylight runs out, you lose hope. You hear rumbling behind you. No, to the left. No, above you. Before you even have time to think, a bobcat emerges. He mawls you and your pet. 
+== panic ==
+You realize you are not on Earth any longer. You are all by yourself on a foreign planet! With nobody else in sight! No sigm of life. Your chest becomes tight, your vision goes blurry, your head is building immense pressure. You can hardly stand anymore. Your legs begin to wobble and your body loses all strength.  
 
 -> death
 
 
 
 == move_onwards== 
-You walk toward the cave.
+You walk toward a river.
 -> memory
 
 == memory ==
-Before you stands the cavern of Josh. You are glad your pet is with you. It is less intimidating. What is your pet's name?
+Before you stands a lush waterfall. Off in the distance, you hear what sounds like a bark. A three-eyed puppy runs out wagging its tail. The new environment is less intimidating now. What is your pet's name?
 
-* [Charlie] 
-    ~ pet_name = "Charlie" 
+* [Scout] 
+    ~ pet_name = "Scout" 
     -> cave_mouth
-* [Susan]
-    ~ pet_name = "Susan"
+* [Marty]
+    ~ pet_name = "Marty"
     -> cave_mouth
-* [Spot]
-    ~ pet_name = "Spot"
+* [Blue]
+    ~ pet_name = "Blue"
     -> cave_mouth
 
 -> cave_mouth
@@ -83,7 +83,7 @@ You are in the east tunnel. It is very dark, you can't see anything.
 
 == west_tunnel ==
 You are in the west 
-{ pet_name == "Spot": Scout would love it here in the west| }
+{ pet_name == "Blue": Blue would love it here in the west| }
 * [Move Onwards] -> encounter_bats
 + [Go back] -> cave_mouth
 -> END 
